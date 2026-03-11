@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Safety 3rd</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="navigation">
+        <a href="/">Home</a>
+        <a href="/principles/">Principles</a>
+        <a href="/propose_a_session/">Propose a Session</a>
+        <a href="/participate/">Participate</a>
+      </div>
+      <script>
+        const activeLink = document.querySelector('.navigation a[href="' + location.pathname + '"]');
+        if (activeLink) { activeLink.classList.add('active'); }
+      </script>
+    </div>
+    <h1>Propose a Session</h1>
+
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdtGIIUU8tsR_4LoLiKDQMhdgvpC9up6QgmFIh555H1bjz1fA/viewform?embedded=true"
+      width="640"
+      height="800"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0">
+      Loading...
+    </iframe>
+  </body>
+</html>

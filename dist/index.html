@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Safety 3rd</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="navigation">
+        <a href="/">Home</a>
+        <a href="/principles/">Principles</a>
+        <a href="/propose_a_session/">Propose a Session</a>
+        <a href="/participate/">Participate</a>
+      </div>
+      <script>
+        const activeLink = document.querySelector('.navigation a[href="' + location.pathname + '"]');
+        if (activeLink) { activeLink.classList.add('active'); }
+      </script>
+    </div>
+    <h1>Safety 3rd</h1>
+
+    <p>its a thing people say .. its also an event..
+  </body>
+</html>
