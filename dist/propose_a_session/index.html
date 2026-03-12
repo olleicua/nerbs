@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="/style.css" />
 
-    <title>Safety 3rd</title>
+    <title>Safety Third</title>
   </head>
   <body>
     <div id="header">
@@ -20,17 +20,31 @@
         const activeLink = document.querySelector('.navigation a[href="' + location.pathname + '"]');
         if (activeLink) { activeLink.classList.add('active'); }
       </script>
+      <div class="logo-line">Safety <img src="/images/bm_logo.png" class="bm-logo-inline" /> Third</div>
     </div>
-    <h1>Propose a Session</h1>
+    <div class="content">
+      <h1>Help Make Safety Third Great!</h1>
 
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSdtGIIUU8tsR_4LoLiKDQMhdgvpC9up6QgmFIh555H1bjz1fA/viewform?embedded=true"
-      width="640"
-      height="800"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0">
-      Loading...
-    </iframe>
+      <p>
+        Do you have an idea for an activity, workshop, or session that could create opportunities for Burn organizers and volunteers to learn / share / network etc? If so, click the link below and fill out the form to send us your proposal:
+      </p>
+
+      <p style="text-align: center;">
+        <a class="form-link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdtGIIUU8tsR_4LoLiKDQMhdgvpC9up6QgmFIh555H1bjz1fA/viewform">S3 2026 Session Proposal Form</a>
+      </p>
+
+
+      <script>
+        // open in a new tab if not mobile
+        var mobileTestPattern = /Mobi|Android|iPhone|iPad|iPod|Windows Phone|BlackBerry|Opera Mini/i;
+        var targetBlank = !(mobileTestPattern.test(navigator.userAgent));
+
+        var $link = document.querySelectorAll('.form-link');
+        if (targetBlank) $link.target = '_blank';
+      </script>
+    </div>
+    <div id="footer">
+      If you have any questions you can reach out to us at <a href="mailto:safetythird@fireflyartscollective.org" target="_blank">safetythird@fireflyartscollective.org</a>
+    </div>
   </body>
 </html>

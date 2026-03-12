@@ -1,0 +1,86 @@
+/* The Marseille font only for non-comercial use:
+ * ﻿https://www.fontspace.com/marseille-font-f146316 */
+@font-face {
+  font-family: 'Marseille';
+  src: url('/fonts/MarseilleFreeRegular-rvKW8.otf') format('opentype'),
+       url('/fonts/MarseilleFreeRegular-MAXEB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #88bbff;
+}
+
+a {
+  color: #aa00aa;
+  text-decoration: underline;
+}
+
+#header {
+  text-align: center;
+  border-bottom: 5px dotted #44099a;
+  padding-bottom: 8px;
+}
+
+.navigation {
+  padding: 11px 0;
+}
+
+.navigation a {
+  font-size: 22px;
+  margin: 0 14px;
+  color: #8a00aa;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+  color: #aa00aa;
+}
+
+.navigation a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.logo-line {
+  font-family: 'Marseille', serif;
+  font-size: 32px;
+}
+
+.bm-logo-inline {
+  display: inline;
+  height: 42px;
+  width: 22.133px;
+  vertical-align: middle;
+}
+
+.content {
+  width: 96%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+#footer {
+  width: 96%;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 280px;
+  padding: 180px 0 20px;
+  text-align: center;
+}

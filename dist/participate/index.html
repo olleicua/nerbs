@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="/style.css" />
 
-    <title>Safety 3rd</title>
+    <title>Safety Third</title>
   </head>
   <body>
     <div id="header">
@@ -20,9 +20,32 @@
         const activeLink = document.querySelector('.navigation a[href="' + location.pathname + '"]');
         if (activeLink) { activeLink.classList.add('active'); }
       </script>
+      <div class="logo-line">Safety <img src="/images/bm_logo.png" class="bm-logo-inline" /> Third</div>
     </div>
-    <h1>Welcome!</h1>
+    <div class="content">
+      <h1>Welcome!</h1>
 
-    <p>rsvp link coming</p>
+      <p>
+        If you would like to come to Safety Third 2026 click the link below and RSVP to the Partiful event.<br />
+        We ask that you contribute $40 to making the event possible but nobody will be turned away for lack of funds. The online payment system is still being set up.
+      </p>
+
+      <p style="text-align: center;">
+        <a class="rsvp-link" target="_blank" href="https://partiful.com/e/1JL1oAti2glLpmPSpOgE">S3 2026 RSVP Page</a>
+      </p>
+
+
+      <script>
+        // open in a new tab if not mobile
+        var mobileTestPattern = /Mobi|Android|iPhone|iPad|iPod|Windows Phone|BlackBerry|Opera Mini/i;
+        var targetBlank = !(mobileTestPattern.test(navigator.userAgent));
+
+        var $link = document.querySelectorAll('.rsvp-link');
+        if (targetBlank) $link.target = '_blank';
+      </script>
+    </div>
+    <div id="footer">
+      If you have any questions you can reach out to us at <a href="mailto:safetythird@fireflyartscollective.org" target="_blank">safetythird@fireflyartscollective.org</a>
+    </div>
   </body>
 </html>

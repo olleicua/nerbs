@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-INDENT_CONTENT = ' ' * 4
+INDENT_CONTENT = ' ' * 6
 LAYOUT_FILENAME = 'page_layout.html'
 PAGES = {
   'index.html' => 'index.html',

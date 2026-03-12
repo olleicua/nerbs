@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="/style.css" />
 
-    <title>Safety 3rd</title>
+    <title>Safety Third</title>
   </head>
   <body>
     <div id="header">
@@ -20,7 +20,13 @@
         const activeLink = document.querySelector('.navigation a[href="' + location.pathname + '"]');
         if (activeLink) { activeLink.classList.add('active'); }
       </script>
+      <div class="logo-line">Safety <img src="/images/bm_logo.png" class="bm-logo-inline" /> Third</div>
     </div>
+    <div class="content">
 {{CONTENT}}
+    </div>
+    <div id="footer">
+      If you have any questions you can reach out to us at <a href="mailto:safetythird@fireflyartscollective.org" target="_blank">safetythird@fireflyartscollective.org</a>
+    </div>
   </body>
 </html>

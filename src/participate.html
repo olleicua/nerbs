@@ -1,3 +1,20 @@
 <h1>Welcome!</h1>
 
-<p>rsvp link coming</p>
+<p>
+  If you would like to come to Safety Third 2026 click the link below and RSVP to the Partiful event.<br />
+  We ask that you contribute $40 to making the event possible but nobody will be turned away for lack of funds. The online payment system is still being set up.
+</p>
+
+<p style="text-align: center;">
+  <a class="rsvp-link" target="_blank" href="https://partiful.com/e/1JL1oAti2glLpmPSpOgE">S3 2026 RSVP Page</a>
+</p>
+
+
+<script>
+  // open in a new tab if not mobile
+  var mobileTestPattern = /Mobi|Android|iPhone|iPad|iPod|Windows Phone|BlackBerry|Opera Mini/i;
+  var targetBlank = !(mobileTestPattern.test(navigator.userAgent));
+
+  var $link = document.querySelectorAll('.rsvp-link');
+  if (targetBlank) $link.target = '_blank';
+</script>
