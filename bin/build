@@ -4,7 +4,7 @@ INDENT_CONTENT = ' ' * 6
 LAYOUT_FILENAME = 'page_layout.html'
 PAGES = {
   'index.html' => 'index.html',
-  'propose_a_session.html' => 'propose_a_session/index.html',
+  'sessions.html' => 'sessions/index.html',
   'participate.html' => 'participate/index.html',
   'principles.html' => 'principles/index.html',
 }
